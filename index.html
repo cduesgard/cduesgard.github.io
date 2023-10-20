@@ -31,6 +31,10 @@
             border: 1.5px solid white;
             cursor: pointer;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
         }
 
         /* Media query for small screens (max-width: 768px) */
@@ -44,7 +48,7 @@
                 margin-top: 10px;
             }
             .project {
-                width: 150px;
+                width: 160px;
                 height: 150px;
                 margin: 5px;
             }
@@ -53,10 +57,10 @@
 </head>
 <body>
     <div class="header">Christian Duesgård</div>
-    <div class="sub-header">Data Analyst</div>
+    <div class="sub-header">Data Analytics Portfolio</div>
     <div class="project-container">
         <div class="project" onclick="location.href='https://github.com/your-username/project1';">
-            Project 1
+            Web scraping and <br> EV car analysis <br> using R
         </div>
         <div class="project" onclick="location.href='https://github.com/your-username/project2';">
             Project 2
