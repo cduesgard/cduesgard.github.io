@@ -5,43 +5,64 @@
     <title>Christian Duesgård - Portfolio</title>
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             font-family: Montserrat;
             text-align: center;
         }
         .header {
             font-size: 36px;
-            margin-top: 100px;
+            margin-top: 20px;
+            
         }
         .sub-header {
             font-size: 18px;
             margin-top: 10px;
         }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+        .linkedin-logo {
+            width: 30px;
+            height: 30px;
+        }
+        .linkedin-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
         .project-container {
             display: flex;
-            flex-wrap: wrap; /* Allow projects to wrap to the next line on small screens */
+            flex-wrap: wrap;
             justify-content: center;
             margin-top: 30px;
         }
         .project {
+            position: relative;
             width: 200px;
             height: 200px;
             margin: 10px;
-            border: 1.5px solid white;
             cursor: pointer;
-            border-radius: 10px;
+            border-radius: 10px; /* Set border-radius to 80px for rounded corners */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
+            justify-content: center;
+            align-items: center;
+            /* Gradient border with rounded corners */
+            border: double 1px transparent;
+            background-image: linear-gradient(white, white), radial-gradient(circle at top left, #343aeb, #34e8eb, #eb34eb);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
         }
 
         /* Media query for small screens (max-width: 768px) */
         @media (max-width: 768px) {
             .header {
                 font-size: 24px;
-                margin-top: 50px;
+                margin-top: 10px;
             }
             .sub-header {
                 font-size: 16px;
@@ -56,6 +77,10 @@
     </style>
 </head>
 <body>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/your-linkedin-profile-url" target="_blank">
+        <img class="linkedin-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-oVF2kbk4FP2MeXU2GtjbgHYdLzgOdfnWlne90Yyigdj5P3e7Gg0G_RDg4BwS7qa0Cc&usqp=CAU" alt="LinkedIn Logo">
+    </a>
+    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLBHMVWRpU2VPB05b10x5jbjzLx2qnX7P4TzFeS2xf8mFy8sOomTKNlr2LGM7vQovP87k&usqp=CAU" alt="Profile Picture">
     <div class="header">Christian Duesgård</div>
     <div class="sub-header">Data Analytics Portfolio</div>
     <div class="project-container">
